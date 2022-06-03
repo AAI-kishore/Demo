@@ -1,0 +1,12 @@
+import pandas as pd
+
+def prediction(model,val_data,scoring_data):
+    Predicated_var = model.predict(val_data)
+    
+    val_probs = model.predict_proba(val_data)[:,1] 
+    df_val_probs = pd.DataFrame(val_probs, columns = ['pred_prob'])
+    
+    scoring_data['Predicated_var'] = Predicated_var
+    scoring_data['pred_prob'] = df_val_probs
+    
+    return scoring_data

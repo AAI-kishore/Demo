@@ -13,9 +13,13 @@ import pickle
 # with open('model.pkl','wb') as f:
 #     pickle.dump(clf,f)
 
-pickle.dump(clf, open('knn_model.pkl','wb'))
+# pickle.dump(clf, open('svm_model.pkl','wb'))
 
 # with open('model.pkl','rb') as f:
 #     clf2 = pickle.load(f)
 
 # print(clf2.predict(X[20:23]))
+
+print(iris.feature_names)
+print(iris.target_names)
+print(X[10])
