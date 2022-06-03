@@ -1,10 +1,11 @@
-import pandas as pd
-from flask import Flask, request
-from sklearn import datasets
-import json
-import pickle
+from flask import Flask
+# , request
+# import pandas as pd
+# from sklearn import datasets
+# import json
+# import pickle
 
-app = Flask(__name__)
+app = flask(__name__)
 
 @app.route('/')
 
